@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MovieGuru</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/master.js"></script>
+    <script src="script/Movies.js"></script>
+    <script src="script/Style.js"></script>
+    <script src="script/Search.js"></script>
+</head>
+
+<body>
+    <div class="firstPage">
+        <div class="menu-headers align-inline1" id="logo">
+            <img src="pics/logo.png" alt="MoviesGuru logotype">
+        </div>
+
+        <div class="menu-headers align-inline1">
+            <div class="search">
+                <input type="text" class="searchTerm" data-ix="0" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton"></button>
+            </div>
+        </div>
+
+        <div class="menu-headers align-inline2 movies">
+            <p>Movies</p>
+        </div>
+
+        <div class="menu-headers align-inline2 series">
+            <p>Series</p>
+        </div>
+    </div>
+
+    <div class="header-underpages">
+        <div class="header-underpages-item" id="logo">
+            <img src="pics/logo.png" alt="MoviesGuru logotype">
+        </div>
+
+        <div class="header-underpages-item">
+            <div class="search">
+                <input type="text" class="searchTerm" data-ix="1" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+            </div>
+
+            <div class="menu-headers align-inline2 movies">
+                <p>Movies</p>
+            </div>
+
+            <div class="menu-headers align-inline2 series">
+                <p>Series</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="insertSlider">
+    </div>
+
+    <main>
+        <div id="topViewedText"></div>
+        <div id="results"></div>
+    </main>
+
+</body>
+
+</html>

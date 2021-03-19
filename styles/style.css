@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+/* --------- FLEX-header ---------- */
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.searchTerm {
+    width: 50%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    text-align: center;
+}
+
+.searchButton {
+    width: 35px;
+    height: 36px;
+    border: 3px solid #00B4CC;
+    border-left: none;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background: url("../pics/search.png") no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+body {
+    background-color: rgb(24, 24, 47);
+}
+
+.firstPage {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.align-inline2 {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.menu-headers p {
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+    font-family: cursive;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-headers p:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-headers p:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.header-underpages {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-underpages-item:first-child {
+    width: 30%;
+}
+
+.header-underpages-item:last-child {
+    width: 70%;
+}
+
+.header-underpages-item {
+    text-align: center;
+    align-self: flex-end;
+}
+
+
+/* Base styling */
+
+
+/* --------- ^ end of FLEX-header ^ ---------- */
+
+
+/* --------- Start of slideshow-genre ---------- */
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#slider {
+    margin-top: 20px;
+}
+
+.items {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 7%;
+  
+}
+
+.items img {
+    border-radius: 15%;
+    -webkit-box-shadow: 0px 10px 12px -1px rgba(1,0,0,1.6);
+	-moz-box-shadow: 0px 20px 12px -1px rgba(1,0,0,1.6);
+	box-shadow: 0px 10px 12px -1px rgba(1,0,0,1.6);
+}
+
+.item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.grab {
+    cursor: url('https://www.google.com/intl/en_ALL/mapfiles/openhand.cur'), default !important;
+}
+
+
+/* -------------------------------- ^ END OF slideshow-genre ^ ----------------------------*/
+
+
+/* -------------------------------- start of top 10 movie result  ----------------------------*/
+
+#topViewedText {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.result {
+    width: 20em;
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 20px;
+    height: max-content;
+}
+
+.result img {
+    max-width: 80%;
+}
+
+.result h2 {
+    color: white;
+}
+
+.description-hided {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    display: none;
+}
+
+.description-show {
+    display: block;
+}
+
+.result div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inline,
+.result div:last-child {
+    display: inline-block;
+    color: white;
+}
+
+.icons {
+    width: 30%;
+}
+
+.viewDescription {
+    width: 10%;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: 1.5;
+    animation-duration: 1.5s;
+    cursor: pointer;
+}
+
+#viewDescriptionText {
+    color: white;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+}
+
+.rotate-descImg {
+    transform: rotate(180deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
